@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Link de importação de fontes direto do goolgle fonts*/
+
+:root {
+    --cor-primaria: #dadada;
+    --cor-secundaria: #2b1700;
+    --cor-terciaria: #00b5d4;
+    --cor-hover: #cacaca;
+
+    --fonte-primaria: "Krona One", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+    /* Root é uma variavel usada para armazenar dados que se repetem no nosso código, ou seja, cores, padrões, dados, infos e afins. */
+    
+    /* Variáveis como cores, fontes */
+}
+
+* {
+    margin: o;
+    /* Define a margem conforme o inspecionar no google.*/
+    padding: 0;
+    /* Define o...*/
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15% ;
+    /* O primeiro valor é o superior*/
+    /* O segundo valor é o direito*/
+    /* O terceiro valor é o inferior*/
+    /* O quarto valor é o esquerdo*/
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    /* A fonte é ajustável de acordo com a escolha do usuário no navegador */
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    /* Coloca um elemento ao lado do outro*/
+    align-items: center;
+    justify-content: space-between;
+    gap: 84px;
+    /* o gap aqui é usado para ter um espaço ativo entre uma section e outra. */
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    /* Coloca um elemento ao lado do outro*/
+    flex-direction: column;
+    /* Organiza os elementos em forma de coluna*/
+    gap: 40px;
+    /* Gap define o espaçamento entre a linha de cima e de baixo.*/
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    /* Aplica o tamanho da fonte e deixa ela adaptável a escolha do usuário no navegador*/
+    font-family: var(--fonte-primaria);
+    /* Descrição da fonte copiada através do campo import no google fonts*/
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+    /* Define a cor da fonte.*/
+}
+
+.apresentacao__conteudo__texto {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+}
+
+.apresentacao__links {
+    display: flex;
+    /* Coloca um elemento ao lado do outro*/
+    flex-direction: column;
+    /* Organiza os elementos em forma de coluna*/
+    justify-content: space-between;
+    align-items: center;
+    /* Alinha os botões/links no centro*/
+    gap: 32px;
+    /* Gap define o espaçamento entre a linha de cima e de baixo.*/
+}
+
+.apresentacao__links__subtitulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+
+}
+
+.apresentacao__links__navegacao {
+    /* background-color: #22D4FD; */
+    display: flex;
+    /* Usado para iniciar e/ou criar uma FlexBox*/
+    justify-content: center;
+    /* Alinhar no centro*/
+    gap: 16px;
+    /* Espaçamento entre os elementos*/
+    border: 2px solid var(--cor-terciaria);
+    /* Usado para tracejar o campo "border" do link*/
+    width: 50%;
+    /* Dimensão do border do link, sua largura*/
+    text-align: center;
+    /* Deixa o texto alinhado no centro.*/
+    border-radius: 16px;
+    /* Cria uma especie de borda em volta do elemento, definida por px. Definido geralmente pelo projeto do FIGMA*/
+    font-size: 1.5rem;
+    /* Tamanho da fonte*/
+    font-weight: 600;
+    /* Peso da fonte utilizada*/
+    padding: 21.5px 0;   
+    text-decoration: none;
+    /* Retira o sublinhado de links e outros elementos decorativos*/
+    color: var(--cor-secundaria);
+    /* Define a cor da fonte.*/
+    font-family: var(--fonte-secundaria);
+    /* Descrição da fonte copiada através do campo import no google fonts*/
+    
+}
+
+.apresentacao__links__link:hover {
+    background-color: var(--cor-hover);
+    /* Altera a cor do background da caixa de seleção*/
+    transform: scale(1.1)
+    /* Dá um leve zoom ao passar com o cursor.*/
+}
+
+.apresentacao__imagem {
+    width: 50%;
+}
+
+.rodape {
+    padding: 24px;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+    
+    .cabecalho__menu {
+        justify-content: center;
+    }
+    
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}

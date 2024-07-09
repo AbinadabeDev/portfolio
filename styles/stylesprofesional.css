@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: o;
+    /* Define a margem conforme o inspecionar no google.*/
+    padding: 0;
+    /* Define o...*/
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: #dadada;
+    color: #2b1700;
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15% ;
+    /* O primeiro valor é o superior*/
+    /* O segundo valor é o direito*/
+    /* O terceiro valor é o inferior*/
+    /* O quarto valor é o esquerdo*/
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #00b5d4;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+.rodape {
+    padding: 24px;
+    color: #000;
+    background-color: #00b5d4;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
